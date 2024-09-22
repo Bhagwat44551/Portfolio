@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagwat Yadav - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Bhagwat Yadav</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my projects, skills, and experiences as I journey towards becoming a full-stack developer.</p>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="about" class="profile">
+            <h2>About Me</h2>
+            <img src="PHOTO-2024-09-22-16-36-12.jpg" alt="Bhagwat Yadav - Profile Picture">
+            <p>Hi, I'm Bhagwat Yadav from Bangalore, India. I'm a tech enthusiast aspiring to be a full-stack developer. Currently pursuing my BCA degree, I'm passionate about leveraging technology to solve problems and constantly exploring new tools and languages to expand my skill set. I thrive on challenges that come with learning and applying new concepts and am eager to continue growing in the field of computer science.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React, Angular</p>
+                </div>
+                <div class="skill">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, Django, Express.js</p>
+                </div>
+                <div class="skill">
+                    <h3>Design</h3>
+                    <p>UI/UX Design, Adobe Photoshop, Figma</p>
+                </div>
+                <div class="skill">
+                    <h3>Databases</h3>
+                    <p>MySQL, MongoDB, PostgreSQL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>My Works</h2>
+            <div class="works">
+                <div class="work-item" data-project="pomodorotimer">
+                    <img src="PHOTO-2024-09-22-16-27-02.jpg" alt="Pomodoro Timer Project" loading="lazy">
+                    <h3>Python Calculetor</h3>
+                    <p>A simple Calculator build built using pyhoon</p>
+                </div>
+                <div class="work-item" data-project="fmv">
+                    <img src="PHOTO-2024-09-22-16-05-22.jpg" alt="FMV Analysis Project" loading="lazy">
+                    <h3>Java Tic-Tac-Toe</h3>
+                    <p>A simple java tic-tac-toe game</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through any of the platforms below:</p>
+            <div class="social-links">
+                <a href=" https://in.linkedin.com/in/bhagwat-yadav-083186259" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/Bhagwat44551" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:bhagwat.yadav@example.com">Email</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Bhagwat Yadav. All rights reserved.</p>
+        </section>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <span class="close-button" aria-label="Close Modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="" />
+            <p id="modal-description"></p>
+            <a id="modal-link" href="#" target="_blank" rel="noopener">View Project</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
